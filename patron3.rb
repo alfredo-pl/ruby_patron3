@@ -1,12 +1,27 @@
-n = ARGV[0].to_i - 1
-n *= 6
+n = ARGV[0].to_i
 n.times do |i|
-    if i%6 == 0 || i%6 ==1
+    if i%n == 0
         print "."
-    elsif
-        i%6 == 2 || i%6 ==3
+        print "."
         print "*"
-    else
+        print "*"
+        print "|"
+        print "|"
+    elsif
+        i%n == 1
+        print "."
+        print "."
+        print "*"
+        print "*"
+        print "|"
+        print "|"
+    elsif
+        i%n == 2
+        print "."
+        print "."
+        print "*"
+        print "*"
+        print "|"
         print "|"
     end
 end
